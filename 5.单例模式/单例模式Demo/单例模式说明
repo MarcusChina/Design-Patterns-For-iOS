@@ -1,0 +1,44 @@
+一、定义：
+   保证一个类仅有一个实例，并提供一个访问它的全局访问点。
+二、相关解释：
+   可以保证在程序运行过程，一个类只有一个实例，而且该实例易于供外界访问，从而方便地控制了实例个数，并节约系统资源。
+  （1）永远只分配一块内存来创建对象
+  （2）提供一个类方法，返回内部唯一的一个变量
+  （3）最好保证init方法也只初始化一次
+三、使用场景：
+   为了在程序的整个生命周期内，只会创建一个类的实例对象，而且只要程序不被杀死，该实例对象就不会被释放；
+   在整个应用程序中，共享一份资源（这份资源只需要创建初始化1次），应该让这个类创建出来的对象永远只有一个。
+四、Demo说明：
+   1、MSSingleton: 将单例写成宏的方式，方便使用
+   2、MSTestSingleton: 使用宏的方式实现单例
+   3、MSCommonSingleton: 直接实现单例
+   4、以上都是使用GCD实现单例，还有通过使用互斥锁的方式实现单例，但是互斥锁会影响性能，所以最好还是使用GCD方式创建单例。
+   5、互斥锁实现单例方式如下：
+
+static id _instance;
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone
+{
+  @synchronized(self)
+  {
+     if (_instance == nil) {
+        _instance = [super allocWithZone:zone];
+     }
+   }
+  return _instance;
+}
+
++ (instancetype)sharedInstance
+{
+  @synchronized(self) {
+    if (_instance == nil) {
+      _instance = [[self alloc] init];
+    }
+  }
+  return _instance;
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+  return _instance;
+}
