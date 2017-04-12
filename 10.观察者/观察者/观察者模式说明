@@ -1,0 +1,24 @@
+一、定义：
+   定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖它的对象都得到通知并被自动更新。
+
+二、相关说明：
+   1)、两种方式：1、通知 NSNotificationCenter
+              2、KVO 基于KVC
+   2)、两种方式的主要差别：
+       1、通知：一个中心对象为所有观察者提供变更通知    主要从广义上关注程序事件
+       2、KVO：被观察的对象直接向观察者发送通知        绑定于特定对象属性的值
+   3)、KVC，即是指 NSKeyValueCoding，一个非正式的Protocol，提供一种机制来间接访问对象的属性。而不是通过调用Setter、Getter方法访问
+       KVC的常用方法：- (id)valueForKey:(NSString *)key; -(void)setValue:(id)value forKey:(NSString *)key;
+                   valueForKey的方法根据key的值读取对象的属性，setValue:forKey:是根据key的值来写对象的属性。
+       注意：（1）key的值必须正确，如果拼写错误，会出现异常
+            （2）当key的值是没有定义的，valueForUndefinedKey:这个方法会被调用，如果你自己写了这个方法，key的值出错就会调用到这里来
+            （3）因为类key反复嵌套，所以有个keyPath的概念，keyPath就是用.号来把一个一个key链接起来，这样就可以根据这个路径访问下去
+            （4）NSArray／NSSet等都支持KVC
+
+
+三、适用场景：
+   1、有两种抽象类型相互依赖，将它们封装在各自的对象中，就可以对它们单独进行改变和复用。
+   2、对一个对象的改变需要同时改变其他对象，而不知道具体多少对象有待改变。
+
+四、Demo说明：
+   分组中对应各种的Demo，在ViewController中调用。
