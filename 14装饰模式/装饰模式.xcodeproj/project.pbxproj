@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C24BA291EA5AC1C0098A193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA281EA5AC1C0098A193 /* main.m */; };
+		2C24BA2C1EA5AC1C0098A193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA2B1EA5AC1C0098A193 /* AppDelegate.m */; };
+		2C24BA2F1EA5AC1C0098A193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA2E1EA5AC1C0098A193 /* ViewController.m */; };
+		2C24BA321EA5AC1C0098A193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA301EA5AC1C0098A193 /* Main.storyboard */; };
+		2C24BA341EA5AC1C0098A193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA331EA5AC1C0098A193 /* Assets.xcassets */; };
+		2C24BA371EA5AC1C0098A193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA351EA5AC1C0098A193 /* LaunchScreen.storyboard */; };
+		2C24BA3F1EA5AC400098A193 /* 装饰模式说明 in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA3E1EA5AC400098A193 /* 装饰模式说明 */; };
+		2C24BA411EA5E57F0098A193 /* 装饰者模式原理图.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA401EA5E57F0098A193 /* 装饰者模式原理图.jpeg */; };
+		2C24BA431EA5E7210098A193 /* 装饰者模式原理图1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C24BA421EA5E7210098A193 /* 装饰者模式原理图1.gif */; };
+		2C24BA471EA5E8B10098A193 /* MSEspresso.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA461EA5E8B10098A193 /* MSEspresso.m */; };
+		2C24BA4B1EA5E9680098A193 /* MSMilk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA4A1EA5E9680098A193 /* MSMilk.m */; };
+		2C24BA4E1EA5E9FF0098A193 /* MSMoCha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C24BA4D1EA5E9FF0098A193 /* MSMoCha.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C24BA241EA5AC1C0098A193 /* 装饰模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "装饰模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C24BA281EA5AC1C0098A193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C24BA2A1EA5AC1C0098A193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C24BA2B1EA5AC1C0098A193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C24BA2D1EA5AC1C0098A193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2C24BA2E1EA5AC1C0098A193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C24BA311EA5AC1C0098A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C24BA331EA5AC1C0098A193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C24BA361EA5AC1C0098A193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C24BA381EA5AC1C0098A193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C24BA3E1EA5AC400098A193 /* 装饰模式说明 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "装饰模式说明"; sourceTree = "<group>"; };
+		2C24BA401EA5E57F0098A193 /* 装饰者模式原理图.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "装饰者模式原理图.jpeg"; sourceTree = "<group>"; };
+		2C24BA421EA5E7210098A193 /* 装饰者模式原理图1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "装饰者模式原理图1.gif"; sourceTree = "<group>"; };
+		2C24BA441EA5E86B0098A193 /* MSBeverage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSBeverage.h; sourceTree = "<group>"; };
+		2C24BA451EA5E8B10098A193 /* MSEspresso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSEspresso.h; sourceTree = "<group>"; };
+		2C24BA461EA5E8B10098A193 /* MSEspresso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSEspresso.m; sourceTree = "<group>"; };
+		2C24BA481EA5E93D0098A193 /* MSCondimentDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCondimentDecorator.h; sourceTree = "<group>"; };
+		2C24BA491EA5E9680098A193 /* MSMilk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMilk.h; sourceTree = "<group>"; };
+		2C24BA4A1EA5E9680098A193 /* MSMilk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMilk.m; sourceTree = "<group>"; };
+		2C24BA4C1EA5E9FF0098A193 /* MSMoCha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMoCha.h; sourceTree = "<group>"; };
+		2C24BA4D1EA5E9FF0098A193 /* MSMoCha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMoCha.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C24BA211EA5AC1C0098A193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C24BA1B1EA5AC1C0098A193 = {
+			isa = PBXGroup;
+			children = (
+				2C24BA261EA5AC1C0098A193 /* 装饰模式 */,
+				2C24BA251EA5AC1C0098A193 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C24BA251EA5AC1C0098A193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA241EA5AC1C0098A193 /* 装饰模式.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C24BA261EA5AC1C0098A193 /* 装饰模式 */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA3E1EA5AC400098A193 /* 装饰模式说明 */,
+				2C24BA401EA5E57F0098A193 /* 装饰者模式原理图.jpeg */,
+				2C24BA421EA5E7210098A193 /* 装饰者模式原理图1.gif */,
+				2C24BA561EA5ECA50098A193 /* Decorator */,
+				2C24BA4F1EA5EB580098A193 /* ConcereteDecorator */,
+				2C24BA581EA5ECE60098A193 /* Component */,
+				2C24BA571EA5ECBA0098A193 /* ConcereteComponent */,
+				2C24BA2A1EA5AC1C0098A193 /* AppDelegate.h */,
+				2C24BA2B1EA5AC1C0098A193 /* AppDelegate.m */,
+				2C24BA2D1EA5AC1C0098A193 /* ViewController.h */,
+				2C24BA2E1EA5AC1C0098A193 /* ViewController.m */,
+				2C24BA301EA5AC1C0098A193 /* Main.storyboard */,
+				2C24BA331EA5AC1C0098A193 /* Assets.xcassets */,
+				2C24BA351EA5AC1C0098A193 /* LaunchScreen.storyboard */,
+				2C24BA381EA5AC1C0098A193 /* Info.plist */,
+				2C24BA271EA5AC1C0098A193 /* Supporting Files */,
+			);
+			path = "装饰模式";
+			sourceTree = "<group>";
+		};
+		2C24BA271EA5AC1C0098A193 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA281EA5AC1C0098A193 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C24BA4F1EA5EB580098A193 /* ConcereteDecorator */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA491EA5E9680098A193 /* MSMilk.h */,
+				2C24BA4A1EA5E9680098A193 /* MSMilk.m */,
+				2C24BA4C1EA5E9FF0098A193 /* MSMoCha.h */,
+				2C24BA4D1EA5E9FF0098A193 /* MSMoCha.m */,
+			);
+			name = ConcereteDecorator;
+			sourceTree = "<group>";
+		};
+		2C24BA561EA5ECA50098A193 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA481EA5E93D0098A193 /* MSCondimentDecorator.h */,
+			);
+			name = Decorator;
+			sourceTree = "<group>";
+		};
+		2C24BA571EA5ECBA0098A193 /* ConcereteComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA451EA5E8B10098A193 /* MSEspresso.h */,
+				2C24BA461EA5E8B10098A193 /* MSEspresso.m */,
+			);
+			name = ConcereteComponent;
+			sourceTree = "<group>";
+		};
+		2C24BA581EA5ECE60098A193 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2C24BA441EA5E86B0098A193 /* MSBeverage.h */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C24BA231EA5AC1C0098A193 /* 装饰模式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C24BA3B1EA5AC1C0098A193 /* Build configuration list for PBXNativeTarget "装饰模式" */;
+			buildPhases = (
+				2C24BA201EA5AC1C0098A193 /* Sources */,
+				2C24BA211EA5AC1C0098A193 /* Frameworks */,
+				2C24BA221EA5AC1C0098A193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "装饰模式";
+			productName = "装饰模式";
+			productReference = 2C24BA241EA5AC1C0098A193 /* 装饰模式.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C24BA1C1EA5AC1C0098A193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = marcus;
+				TargetAttributes = {
+					2C24BA231EA5AC1C0098A193 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S5T3KG8NJE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C24BA1F1EA5AC1C0098A193 /* Build configuration list for PBXProject "装饰模式" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C24BA1B1EA5AC1C0098A193;
+			productRefGroup = 2C24BA251EA5AC1C0098A193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C24BA231EA5AC1C0098A193 /* 装饰模式 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C24BA221EA5AC1C0098A193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C24BA371EA5AC1C0098A193 /* LaunchScreen.storyboard in Resources */,
+				2C24BA341EA5AC1C0098A193 /* Assets.xcassets in Resources */,
+				2C24BA411EA5E57F0098A193 /* 装饰者模式原理图.jpeg in Resources */,
+				2C24BA3F1EA5AC400098A193 /* 装饰模式说明 in Resources */,
+				2C24BA321EA5AC1C0098A193 /* Main.storyboard in Resources */,
+				2C24BA431EA5E7210098A193 /* 装饰者模式原理图1.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C24BA201EA5AC1C0098A193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C24BA4B1EA5E9680098A193 /* MSMilk.m in Sources */,
+				2C24BA2F1EA5AC1C0098A193 /* ViewController.m in Sources */,
+				2C24BA2C1EA5AC1C0098A193 /* AppDelegate.m in Sources */,
+				2C24BA291EA5AC1C0098A193 /* main.m in Sources */,
+				2C24BA4E1EA5E9FF0098A193 /* MSMoCha.m in Sources */,
+				2C24BA471EA5E8B10098A193 /* MSEspresso.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C24BA301EA5AC1C0098A193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C24BA311EA5AC1C0098A193 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C24BA351EA5AC1C0098A193 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C24BA361EA5AC1C0098A193 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C24BA391EA5AC1C0098A193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C24BA3A1EA5AC1C0098A193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C24BA3C1EA5AC1C0098A193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S5T3KG8NJE;
+				INFOPLIST_FILE = "装饰模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcus.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2C24BA3D1EA5AC1C0098A193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S5T3KG8NJE;
+				INFOPLIST_FILE = "装饰模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcus.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C24BA1F1EA5AC1C0098A193 /* Build configuration list for PBXProject "装饰模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C24BA391EA5AC1C0098A193 /* Debug */,
+				2C24BA3A1EA5AC1C0098A193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C24BA3B1EA5AC1C0098A193 /* Build configuration list for PBXNativeTarget "装饰模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C24BA3C1EA5AC1C0098A193 /* Debug */,
+				2C24BA3D1EA5AC1C0098A193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C24BA1C1EA5AC1C0098A193 /* Project object */;
+}
